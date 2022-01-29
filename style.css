@@ -1,0 +1,354 @@
+#header {
+    border: 1px solid black;
+    justify-content: center;
+    margin:10px;
+    padding:10px;
+    display: flex;
+}
+
+#header button {
+    margin :10px;
+    padding:10px;
+    border-radius: 10px;
+    background-color:rgb(0, 0, 0);
+    color: #FDD835;
+    font-weight:600;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+
+#header button:hover{
+    cursor:pointer;
+    color:rgb(0, 0, 0);
+    background-color: #FDD835;
+    transform: scale(1.05);
+}
+
+
+
+#container {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+
+.folder {
+    height: 100px;
+    width: 150px;
+    background-color:#FDD835;
+    color: #010101;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 550;
+    margin: 10px;
+    border: 1px solid #000000;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.folder:hover {
+          transform: scale(1.05);
+}
+
+.folder [purpose='name'] {
+    color:#3949AB;
+    margin-top: 50px;
+    font-size: 5mm;
+}
+
+.folder [action] {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.folder [action]:hover {
+    color:#3949AB;
+}
+
+#breadcrump {
+    border: 1px solid black;
+    margin:10px;
+    display: flex;
+}
+
+#breadcrump [purpose='path'] {
+    color: #FDD835;
+    background-color: #000000;
+    padding: 10px;
+    border-right: 3px solid #FDD835;
+    font-weight: 600;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+#breadcrump [purpose='path']:hover {
+    color: #000000;
+    background-color: #FDD835;
+    border-right: 3px solid #000000;
+    text-decoration: underline;
+}
+
+/* ------------------Text file CSS---------------------- */
+
+.text-file {
+    height: 100px;
+    width: 150px;
+    background-color: #00BCD4;
+    color: #010101;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 550;
+    margin: 10px;
+    border: 1px solid #000000;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.text-file:hover {
+          transform: scale(1.05);
+}
+
+.text-file [purpose='name'] {
+    color:#ffffff;
+    margin-top: 50px;
+    font-size: 5mm;
+}
+
+.text-file [action] {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.text-file [action]:hover {
+    color:#fefff5;
+}
+
+/* ------------------Album CSS---------------------- */
+
+.album {
+    height: 100px;
+    width: 150px;
+    background-color: #ff4784;
+    color: #010101;
+    padding: 8px;
+    border-radius: 5px;
+    font-weight: 550;
+    margin: 10px;
+    border: 1px solid #000000;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.album:hover {
+          transform: scale(1.05);
+}
+
+.album [purpose='name'] {
+    color:#ffffff;
+    margin-top: 50px;
+    font-size: 5mm;
+}
+
+.album [action] {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.album [action]:hover {
+    color:#fefff5;
+}
+
+
+/* ------------------App CSS---------------------- */
+
+#app {
+    border: 1px solid black;
+    margin:10px;
+}
+
+#app-title-bar {
+    display: flex;
+    height: 40px;
+    background-color: #263238;
+    color: white;
+}
+
+#app-title {
+    color:yellow;
+    text-align: center;
+    width: 94%;
+    margin-top: 5px;
+}
+
+#app-menu-bar {
+    display: flex;
+    background-color: #395361;
+    height: 40px;
+}
+
+#app-body {
+    display: flex;
+    background-color: #fcffd8;
+    height: 500px;
+    border: 2px solid #395361;
+}
+
+#win-actions span {
+    cursor:pointer;
+    margin-top: 5px;
+}
+
+#win-actions span:hover {
+    color :#58e988;
+    background-color: #3a4c55;
+}
+
+
+/* ------------------Noteapd CSS---------------------- */
+
+.notepad-body {
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-body textarea {
+    height: 100%;
+    width: 100%;
+}
+
+.notepad-menu {
+    width: 100%;
+    padding: 5px;;
+}
+
+.notepad-menu * {
+    margin: 0px 6px;  /*0px represent top and bottom margin is zero */
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+/* Bold italic underline style */
+.notepad-menu span {
+    vertical-align: bottom;
+    color: #58e988;
+    
+}
+/* Bold italic underline hover style */
+.notepad-menu span:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: #395361;
+}
+/* Bold italic underline execution on being pressed */
+.notepad-menu [pressed=true] {
+    border: 1px solid black;
+    background-color: white;
+    color: #395361;
+}
+
+.notepad-menu [action=upload] {
+    color: #58e988;
+}
+
+/* .notepad-menu select {
+    height: 30px;
+} */
+ 
+[purpose=download] {
+    display: none;
+}
+
+.notepad-menu input[action=upload] {
+    display: none;
+}
+
+/* ------------------Album CSS---------------------- */
+/* ------------------Album Menu CSS---------------------- */
+
+.album-menu {
+    width: 100%;
+    padding: 5px;;
+}
+
+.album-menu * {
+    margin: 0px 6px;  /*0px represent top and bottom margin is zero */
+    padding: 2px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.album-menu span {
+    vertical-align: bottom;
+    color: #58e988;
+    
+}
+
+.album-menu span:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: #395361;
+}
+
+/* ------------------Album body CSS---------------------- */
+
+.album-body {
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+}
+
+.picture-list {
+    border: 1px solid black;
+    height: 100px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-list img {
+    height: 90%;
+    border: 2px solid #004b7c;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.picture-list img:hover {
+    transform: scale(1.1);
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.picture-list img[pressed=true] {
+    transform: scale(1.05);
+    box-shadow: 2px 1px 3px rgb(255, 0, 0) ;
+}
+
+/*--------Album bottom part-------*/
+.picture-view {
+    border: 1px solid black;
+    height: 350px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+}
+
+.picture-view > div {
+    height: 100%;
+}
+
+.picture-view .move-left {
+    width: 15%;
+}
+
+.picture-view .picture-main {
+    padding: 5px;
+    width: 70%;
+    display: flex;
+}
+
+.picture-view .picture-main img {
+    height: 100%;
+}
+
+.picture-view .move-right {
+    width: 15%;
+}
